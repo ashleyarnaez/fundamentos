@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  background-color: #E0EAF5;
+  color: #2B3747;
+}
+
+/* Header */
+header {
+  background-color: #ffffff;
+  position: relative;
+  padding: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .logo img {
+  width: 160px;
+
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+header nav ul li a.nav-link {
+  color: #36472b;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a.nav-link:hover {
+  color: #6A8FBF;
+}
+
+.login-btn {
+  background-color: #6A8FBF;
+  color: #FFF;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background-color: #43628F;
+}
+
+/* Banner Principal */
+.banner {
+  position: relative;
+  background-image: url("../img/clinica1.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #FFF;
+}
+
+.banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.banner-content {
+  position: relative;
+  z-index: 1;
+}
+
+.banner .btn {
+  background-color: #6A8FBF;
+  color: #FFF;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.banner .btn:hover {
+  background-color: #43628F;
+}
+
+/* Sección Intro */
+.intro {
+  padding: 2rem 1rem;
+  background-color: #B8D1E9;
+  text-align: center;
+}
+
+.intro h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.intro p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Sección Imágenes */
+.image-section {
+  padding: 2rem 1rem;
+}
+
+.image-section .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.image-section .col-md-6 img {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .image-section .col-md-6 {
+    flex: 0 0 100%;
+  }
+}
+
+/* Menú Inferior (Links) */
+.bottom-menu {
+  padding: 1rem;
+  text-align: center;
+  background-color: #FFF;
+}
+
+.bottom-menu ul {
+  list-style: none;
+  display: inline-flex;
+  gap: 1.5rem;
+}
+
+.bottom-menu ul li a {
+  text-decoration: none;
+  color: #2B3747;
+  transition: color 0.3s ease;
+}
+
+.bottom-menu ul li a:hover {
+  color: #6A8FBF;
+}
+
+/* Footer*/
+footer {
+  background-color: #2B3747;
+  color: #FFF;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
