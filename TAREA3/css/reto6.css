@@ -1,0 +1,91 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    background-color: #f2f2f2;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    font-size: small;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, footer {
+    width: 100%;
+    background-color: #a2cddc;
+    color: #323d42;
+    padding: 10px 10px;
+}
+
+header {
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    flex: 1; 
+    padding-bottom: 50px;
+}
+
+footer {
+    padding-top: 25px;
+    text-align: center;
+}
+
+
+a {
+    color: inherit;
+    text-decoration: none; 
+}
+
+a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.banner {
+    background-color: #000000;
+    color: white;
+    padding: 50px;
+    text-align: center;
+}
+
+.car-container img {
+    max-width: 100%;
+    height: auto;
+    transition: 0.3s ease-in-out;
+}
+
+.color-selector {
+    margin-top: 20px;
+}
+
+.color-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 10px;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+input[type="radio"]:checked + .color-circle {
+    border: 3px solid black;
+}
+
+button {
+    width: 100%;
+}
