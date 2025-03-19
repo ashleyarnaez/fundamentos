@@ -1,0 +1,364 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    scroll-behavior: smooth;
+    transition: all ease-in 0.5s;
+}
+
+.seccion {
+    background-image: url("../img/banner.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 650px;
+}
+
+.seccion h1 {
+    padding-top: 260px;
+    font-size: 85px;
+    color: #000;
+    text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
+    font-weight: bold;
+}
+
+header {
+    background-color: #e4e4e4;
+}
+
+.nav-item a {
+    font-size: 17px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #000;
+    transition: all 0.5s ease-out;
+}
+
+.nav-item a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.navigation-wrap .nav-item {
+    padding: 10px;
+    transition: all 200ms linear;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-toggler i {
+    color: #000;
+    font-size: 27px;
+}
+
+.navbar-nav {
+    text-align: center;
+}
+
+.dropdown a:focus {
+    color: #000;
+}
+
+.dropdown-menu {
+    background-color: #cfcfcf;
+    border: none;
+}
+
+.botonScrollTop {
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background-color: #ffd433;
+    right: 30px;
+    bottom: 30px;
+    text-align: center;
+    line-height: 45px;
+    color: #000;
+    font-size: 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.seccion1 {
+    background-color: #ffd433;
+}
+
+.seccion1 h2 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.seccion2 .tituloSeccion2 {
+    padding-top: 25px;
+    padding-bottom: 45px;
+    font-size: 45px;
+}
+
+.seccion2 .icon {
+    clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+    background-color: #ffd433;
+    width: 110px;
+    padding: 25px;
+    color: #fff;
+}
+
+.seccion3 {
+    background-image: url("../img/banner2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 450px;
+    background-attachment: fixed;
+}
+
+.seccion3 h2 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 45px;
+    padding-top: 100px;
+}
+
+.seccion4 .tituloSeccion4 {
+    padding-top: 25px;
+    padding-bottom: 45px;
+    font-size: 45px;
+}
+
+.seccion4 .card {
+    border: none;
+}
+
+footer {
+    background-color: #ffd433;
+}
+
+footer p {
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 15px;
+}
+
+
+/* estilos para el modo oscuro */
+
+
+/* cuando se le da clic al boton del modo oscuro, el body cambia de color y 
+la mayoria de los hijos del body heredan el color blanco y el transition para suavidad al pasarlo al modo oscuro*/
+
+.modoOscuroBody {
+    background-color: #121212;
+    color: #fff;
+    transition: all ease-in 0.5s;
+}
+
+
+/* cuando se aplique el modo oscuro que todo el nav aplique esa transition para suavidad al pasarlo al modo oscuro
+que se agregue ese fondo */
+
+.modoOscuroBody .navbar {
+    background-color: #121212;
+    transition: all ease-in 0.5s;
+}
+
+
+/* cuando se aplique el modo oscuro que las opciones del menu sea color blanco */
+
+.modoOscuroBody .navbar-nav .nav-link {
+    color: #fff;
+}
+
+
+/* cuando se aplique el modo oscuro que los p de las cards se coloquen en color negro */
+
+.modoOscuroBody .seccion4 .card-body {
+    color: #000000;
+}
+
+
+/* estilos btn modo oscuro */
+
+.modoOscuroIconBtn {
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background-color: #ffd433;
+    left: 30px;
+    bottom: 30px;
+    text-align: center;
+    line-height: 45px;
+    color: #000;
+    font-size: 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    align-content: center;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(234, 167, 23, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler .navbar-toggler-icon:hover {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(234, 167, 23, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+
+/*COMPONENTE SWITCH*/
+
+.language-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.language-switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+.capa-menu, .capa-logo{
+    width: 50%;
+    text-align: center;
+    background-color: black;
+}
+
+.capa-logo img{
+    height: 150px;
+}
+
+/*--------------------------------------------------------------------------*/
+
+/*-----------------------------SWITCH---------------------------------------*/
+.language-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.language-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/*control slider switch*/
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #4900FA;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+}
+/*fondo control chequeado por el usuario */
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Texto de los 2 idiomas */
+.language-text {
+    position: relative;
+    top: 1px;
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+/*colores lineas menu hamburguesa*/
+
+@media (max-width: 576px) {
+    h1{
+        font-size: 50px !important;
+     }
+    .toggle{
+       display: block;
+       margin-left:75px;
+     }
+     
+    .navbar-toggler{
+        background-color: #000;
+     }
+
+    .custom-toggler .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(234, 167, 23, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+    .custom-toggler .navbar-toggler-icon:hover {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(234, 167, 23, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+
+}
+
+
+/* Small devices (landscape phones, 576px and up)*/
+
+@media (min-width: 576px) {
+    .custom-toggler .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+    }
+    .custom-toggler .navbar-toggler-icon:hover {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+    }
+}
