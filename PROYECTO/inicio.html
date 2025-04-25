@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Inicio - BioSmile Clinic</title>
+    <link rel="icon" href="img/biosmilelogo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/inicio.css">
+    <link href="https://fonts.googleapis.com/css2?family=National+Park:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
+
+  </head>
+  <body>
+
+    <header>
+      <div class="logo">
+        <img src="img/biosmilehorizontal.png" alt="Logo BioSmile Clinic">
+      </div>
+
+    
+      <nav>
+        <ul class="nav">
+          <li class="nav-item"><a class="nav-link" href="inicio.html" data-es="Inicio" data-en="Home">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="servicios.html" data-es="Servicios" data-en="Services">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="docs.html" data-es="Profesionales" data-en="Professionals">Profesionales</a></li>
+          <li class="nav-item"><a class="nav-link" href="prod.html" data-es="Productos" data-en="Products">Productos</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html" data-es="Contacto" data-en="Contact">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link" href="app.html" data-es="Agendar" data-en="Book">Agendar</a></li>
+  
+        </ul>
+      </nav>
+
+      <div class="language-switcher">
+        <button onclick="changeLanguage('es')">ES</button>
+        <button onclick="changeLanguage('en')">EN</button>
+      </div>
+
+    </header>
+
+    <section class="banner">
+      <div class="banner-overlay"></div>
+      <div class="banner-content">
+        <h1 data-es="Bienvenido a BioSmile Clinic" data-en="Welcome to BioSmile Clinic">Bienvenido a BioSmile Clinic</h1>
+        <p data-es="Cuidamos tu sonrisa con tecnología de punta y un equipo profesional" data-en="We care for your smile with cutting-edge technology and a professional team">Cuidamos tu sonrisa con tecnología de punta y un equipo profesional</p>
+        <a href="info.html" class="btn btn-lg" data-es="Leer Más" data-en="Read More">Leer Más</a>
+      </div>
+    </section>
+
+    <section class="intro">
+      <div class="container">
+        <h2 data-es="Acerca de Nosotros" data-en="About Us">Acerca de Nosotros</h2>
+        <p data-es="En BioSmile Clinic, nos especializamos en ofrecer atención odontológica de alta calidad, combinando tecnología de vanguardia con un equipo de profesionales altamente capacitados. Nuestro compromiso es brindarte un servicio integral y personalizado, garantizando el mejor cuidado para tu sonrisa." data-en="At BioSmile Clinic, we specialize in providing high-quality dental care, combining state-of-the-art technology with a team of highly trained professionals. Our commitment is to offer you comprehensive and personalized service, ensuring the best care for your smile.">En BioSmile Clinic, nos especializamos en ofrecer atención odontológica de alta calidad, combinando tecnología de vanguardia con un equipo de profesionales altamente capacitados. Nuestro compromiso es brindarte un servicio integral y personalizado, garantizando el mejor cuidado para tu sonrisa.</p><br>
+        <p data-es="Desde limpiezas dentales hasta tratamientos avanzados, en BioSmile Clinic nos esforzamos por hacer que cada visita sea cómoda y segura. Nuestra prioridad es tu bienestar, proporcionándote soluciones eficaces para mantener una salud bucal óptima." data-en="From dental cleanings to advanced treatments, at BioSmile Clinic we strive to make every visit comfortable and safe. Your well-being is our priority, providing effective solutions to maintain optimal oral health.">Desde limpiezas dentales hasta tratamientos avanzados, en BioSmile Clinic nos esforzamos por hacer que cada visita sea cómoda y segura. Nuestra prioridad es tu bienestar, proporcionándote soluciones eficaces para mantener una salud bucal óptima.</p><br>
+        <p data-es="¡Déjanos cuidar de tu sonrisa y devolverte la confianza que mereces!" data-en="Let us take care of your smile and restore the confidence you deserve!">¡Déjanos cuidar de tu sonrisa y devolverte la confianza que mereces!</p>
+      </div>
+    </section>
+
+    <div class="container-carousel">
+      <h2 data-es="¡En BioSmile te hacemos sentir bien!" data-en="At BioSmile, we make you feel good!" class="text-center">¡En BioSmile te hacemos sentir bien!</h2><br>
+      <img id="thumb" src="img/clinica10.jpg" class="img-fluid" alt="Imagen del carrusel"> 
+      <div class="text-center pt-4">               
+        <button class="btn btn-primary btn-lg" onclick="cambiar(-1)">←</button>
+        <button class="btn btn-primary btn-lg" onclick="cambiar(1)">→</button>
+      </div>
+    </div>
+
+    <section class="testimonials-section">
+      <div class="container">
+        <h2 data-es="Testimoniales" data-en="Testimonials" class="titulos text-center">Testimoniales</h2>
+          <p data-es="Nuestros pacientes son la razón por la que damos lo mejor cada día. Conoce sus experiencias reales y descubre por qué en BioSmile somos la clínica dental de confianza para cientos de sonrisas felices." data-en="Our patients are the reason we give our best every day. Discover their real experiences and find out why BioSmile is the trusted dental clinic for hundreds of happy smiles.">
+            Nuestros pacientes son la razón por la que damos lo mejor cada día. Conoce sus experiencias reales y descubre por qué en BioSmile somos la clínica dental de confianza para cientos de sonrisas felices.
+          </p>
+    
+          <div class="testimonials_container">
+            <div class="testimonials owl-carousel owl-theme">
+              <div class="item">
+                <img src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="img-fluid rounded-circle">
+                <h3>Mariana Rojas</h3>
+                <p data-es="El trato fue increíble desde la primera cita. Mi sonrisa luce mucho mejor y ahora no tengo miedo de mostrarla en fotos." data-en="The treatment was incredible from the very first appointment. My smile looks so much better now, and I'm no longer afraid to show it in photos.">El trato fue increíble desde la primera cita. Mi sonrisa luce mucho mejor y ahora no tengo miedo de mostrarla en fotos.</p>
+              </div>
+              <div class="item">
+                <img src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                <h3>Joaquín Herrera</h3>
+                <p data-es="Me hicieron una limpieza profunda sin dolor alguno. El equipo es muy profesional y siempre explican cada paso con detalle." data-en="I had a deep cleaning done without any pain. The team is very professional and always explains each step in detail.">Me hicieron una limpieza profunda sin dolor alguno. El equipo es muy profesional y siempre explican cada paso con detalle.</p>
+              </div>
+              <div class="item">
+                <img src="https://images.pexels.com/photos/1181519/pexels-photo-1181519.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                <h3>Andrea Solís</h3>
+                <p data-es="Tenía miedo al dentista, pero en BioSmile me sentí muy segura. Volveré sin duda para continuar con mi tratamiento." data-en="I used to be afraid of the dentist, but at BioSmile I felt very safe. I’ll definitely be back to continue my treatment.">Tenía miedo al dentista, pero en BioSmile me sentí muy segura. Volveré sin duda para continuar con mi tratamiento.</p>
+              </div>
+              <div class="item">
+                <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                <h3>Lucía Fernández</h3>
+                <p data-es="Mi hijo necesitaba ortodoncia y aquí encontramos el mejor acompañamiento. No dudaría en recomendarle la clínica a mi familia." data-en="My son needed orthodontic treatment, and here we found the best support. I wouldn't hesitate to recommend the clinic to my family.">Mi hijo necesitaba ortodoncia y aquí encontramos el mejor acompañamiento. No dudaría en recomendarle la clínica a mi familia.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+    <!-- Menú inferior -->
+    <section class="bottom-menu">
+      <div class="container">
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="inicio.html" data-es="Inicio" data-en="Home">Inicio</a></li>
+          <li class="list-inline-item"><a href="servicios.html" data-es="Servicios" data-en="Services">Servicios</a></li>
+          <li class="list-inline-item"><a href="docs.html" data-es="Profesionales" data-en="Professionals">Profesionales</a></li>
+          <li class="list-inline-item"><a href="prod.html" data-es="Productos" data-en="Products">Productos</a></li>
+          <li class="list-inline-item"><a href="contacto.html" data-es="Contacto" data-en="Contact">Contacto</a></li>
+          <!-- APP<li class="list-inline-item"><a href="app.html" data-es="Agendar" data-en="Book">Agendar</a></li> -->
+        </ul>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p data-es="© 2025 BioSmile Clinic. Todos los derechos reservados." data-en="© 2025 BioSmile Clinic. All rights reserved.">© 2025 BioSmile Clinic. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js " integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin=" anonymous " referrerpolicy="no-referrer "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js " integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin=" anonymous " referrerpolicy="no-referrer "></script>
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 12,
+            nav: true,
+            dots: false,
+            autoplay: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
+    </script>
+
+    <script>
+      let micarrusel = [
+        { imageurl: "img/clinica10.jpg", titulo: "Foto #1" },
+        { imageurl: "img/clinica2.jpg", titulo: "Foto #2" },
+        { imageurl: "img/clinica6.jpg", titulo: "Foto #3" },
+        { imageurl: "img/clinica7.jpg", titulo: "Foto #4" },
+        { imageurl: "img/clinica3.jpg", titulo: "Foto #5" },
+        { imageurl: "img/clinica8.jpg", titulo: "Foto #6" },
+        { imageurl: "img/clinica9.jpg", titulo: "Foto #7" }
+      ];
+
+      let foto = 0;
+
+      function cambiar(mas) {
+        foto += mas;
+
+        // Controlar los límites del índice
+        if (foto >= micarrusel.length) {
+          foto = 0;
+        }
+        if (foto < 0) {
+          foto = micarrusel.length - 1;
+        }
+
+        // Actualizar imagen y título
+        document.getElementById("thumb").src = micarrusel[foto].imageurl;
+        document.getElementById("titulo").innerText = micarrusel[foto].titulo;
+      }
+    </script>
+
+
+    <script src="js/inicio.js"></script>
+  </body>
+</html>

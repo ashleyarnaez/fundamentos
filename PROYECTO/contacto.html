@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto - BioSmile Clinic</title>
+  <link rel="icon" href="img/biosmilelogo.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/inicio.css">
+  <link href="https://fonts.googleapis.com/css2?family=National+Park:wght@200..800&display=swap" rel="stylesheet">
+</head>
+<body class="wrapper">
+
+    <header>
+        <div class="logo">
+          <img src="img/biosmilehorizontal.png" alt="Logo BioSmile Clinic">
+        </div>
+      
+        <nav>
+          <ul class="nav">
+            <li class="nav-item"><a class="nav-link" href="inicio.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link" href="docs.html">Profesionales</a></li>
+            <li class="nav-item"><a class="nav-link" href="prod.html">Productos</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+            <li class="nav-item"><a class="nav-link" href="app.html">Agendar</a></li>
+          </ul>
+        </nav>
+        <div class="language-switcher">
+          <button onclick="changeLanguage('es')">ES</button>
+          <button onclick="changeLanguage('en')">EN</button>
+        </div>
+      </header>
+
+    <!-- Sección Contacto -->
+    <main class="container mt-4 doctor-section">
+        <section class="container mb-5">
+            <h2 class="text-center mb-4">Contáctanos</h2>
+            <p class="text-center mb-4">¿Tienes alguna duda? Déjanos tu mensaje y te responderemos lo antes posible.</p>
+            <form id="contactForm">
+              <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+              </div>
+              <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+          </section>          
+    </main>
+  
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2025 BioSmile Clinic. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="js/inicio.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script>
+    emailjs.init("c5YWFf3LL9Eg1yA_V");
+  </script>
+  <script src="js/contact.js"></script>
+
+  
+</body>
+</html>
+

@@ -1,0 +1,19 @@
+{
+    "doctores": {
+      "odontología general": ["Dra Ana Salazar", "Dr Denis Aguilar"],
+      "periodoncia": ["Dr Daniel Salazar"],
+      "odontología estética": ["Dra Lucía Vargas"],
+      "ortodoncia": ["Dr Carlos Méndez"],
+      "endodoncia": ["Dra Paola Ríos"],
+      "cirugía maxilofacial": ["Dr Héctor Navarro"]
+    },
+    "tratamientos": {
+      "odontología general": ["Limpieza Dental", "Resinas Estéticas"],
+      "odontología estética": ["Blanqueamiento Dental", "Carillas de Porcelana"],
+      "ortodoncia": ["Brackets Metálicos", "Invisalign"],
+      "endodoncia": ["Tratamiento de Conducto", "Retratamiento Endodóntico"],
+      "cirugía maxilofacial": ["Cirugía de Cordales", "Colocación de Implantes"],
+      "periodoncia": ["Cirugías de Acceso", "Tratamiento de Mantenimiento"]
+    }
+}
+  

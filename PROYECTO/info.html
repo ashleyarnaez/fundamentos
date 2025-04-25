@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Conócenos - BioSmile Clinic</title>
+    <link rel="icon" href="img/biosmilelogo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/inicio.css">
+    <link href="https://fonts.googleapis.com/css2?family=National+Park:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
+    <!-- jQuery (requerido por Owl Carousel) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <img src="img/biosmilehorizontal.png" alt="Logo BioSmile Clinic">
+      </div>
+    
+      <nav>
+        <ul class="nav">
+          <li class="nav-item"><a class="nav-link" href="inicio.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="docs.html">Profesionales</a></li>
+          <li class="nav-item"><a class="nav-link" href="prod.html">Productos</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link" href="app.html">Agendar</a></li>
+        </ul>
+      </nav>
+      <div class="language-switcher">
+        <button onclick="changeLanguage('es')">ES</button>
+        <button onclick="changeLanguage('en')">EN</button>
+      </div>
+    </header>
+
+    <!-- Sección Intro -->
+    <section class="intro">
+        <div class="container">
+          <h2>BioSmile Clinic</h2>
+          <p>BioSmile Clinic abrió sus puertas en el año 2012, fundada por la Dra. Ana Salazar y el Dr. Denis Aguilar, dos odontólogos con una visión clara: crear un espacio donde la salud bucal se atendiera con excelencia clínica pero también con empatía, cercanía y calidez humana. En sus inicios, la clínica contaba con solo dos sillones dentales y un pequeño equipo multidisciplinario. Sin embargo, gracias a la confianza de sus primeros pacientes y el compromiso constante por mejorar, BioSmile Clinic fue expandiéndose año tras año.<br><br>
+
+            Durante su primera década, la clínica invirtió en tecnología de vanguardia como radiografías digitales, escáneres intraorales y equipos de esterilización de grado hospitalario. Esto permitió ofrecer tratamientos cada vez más precisos, cómodos y seguros. En paralelo, se amplió el equipo profesional incorporando especialistas en ortodoncia, implantología, estética dental y odontopediatría.<br><br>
+            
+            En 2018, BioSmile inauguró su nueva sede actual: un espacio moderno, accesible e inclusivo, diseñado para brindar una experiencia relajada y libre de ansiedad. También se implementaron prácticas sostenibles como el uso de materiales biodegradables y la digitalización de historiales clínicos.<br><br>
+            
+            Hoy, más de una década después, BioSmile Clinic sigue guiada por los mismos valores que le dieron origen: honestidad, excelencia y cuidado humano. Con cientos de pacientes satisfechos y una comunidad fiel, miramos al futuro con ilusión, comprometidos con seguir aprendiendo, evolucionando y sonriendo junto a quienes confían en nosotros.</p>
+  
+        </div>
+      </section>
+
+    <!-- Imágenes -->
+    <section class="image-section glightbox-gallery">
+    <h3>Nuestras Instalaciones</h3><br>
+      <div class="row">
+        <div class="col-md-4 col-lg-4">
+          <div class="card">
+            <a href="img/clinica5.jpg" class="glightbox" data-gallery="galeria"><img src="img/clinica5.jpg" class="card-img-top img-fluid" alt="Clinica 2"></a>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-4">
+          <div class="card">
+            <a href="img/clinica4.jpg" class="glightbox" data-gallery="galeria"><img src="img/clinica4.jpg" class="card-img-top img-fluid" alt="Clinica 4"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Video embebido -->
+    
+    <section class="video-section text-center my-4">
+      <p>Mira el siguiente video para aprender un poco más de nuestras instalaciones:</p>
+      <a href="https://www.youtube.com/watch?v=d3bXj6zJ8jw" class="glightbox" data-type="video">
+        <img width="560" height="315" src="img/video.png" alt="Video institucional" class="img-fluid">
+      </a>
+    </section><br>
+    
+    <!-- Tabs -->
+    <section class="intro">
+    <div class="tab tam1 text-center">
+      <button class="tablinks active" onclick="opciones(event, 'mision')">Misión</button>
+      <button class="tablinks" onclick="opciones(event, 'vision')">Visión</button>
+      <button class="tablinks" onclick="opciones(event, 'valores')">Valores</button>
+    </div>
+    <div id="mision" class="tabcontent" style="display: block;">
+      <h3>Misión</h3>
+      <p>
+        En BioSmile Clinic, nuestra misión es brindar atención odontológica de excelencia, combinando tecnología de vanguardia con un trato cálido, cercano y humano. Nos comprometemos a mejorar la salud bucal de nuestros pacientes con tratamientos seguros, personalizados y accesibles.
+      </p>
+    </div>
+    <div id="vision" class="tabcontent">
+      <h3>Visión</h3>
+      <p>
+        Aspiramos a ser una clínica dental líder en innovación, confianza y sostenibilidad en Costa Rica. Nuestra visión es construir un futuro donde cada persona pueda sonreír con seguridad, sabiendo que su bienestar bucal está en manos responsables y empáticas.
+      </p>
+    </div>
+    <div id="valores" class="tabcontent">
+      <h3>Valores</h3>
+      <p>
+        En BioSmile Clinic nos guiamos por la honestidad, la excelencia, la empatía, el respeto y la responsabilidad social. Estos valores definen cada decisión clínica, cada interacción con nuestros pacientes y nuestro compromiso con el entorno.
+      </p>
+    </div>
+    </section>
+
+    <!-- Tira -->
+    <section class="test">
+      <div class="container">
+        <h2>Nuestros Patrocinadores</h2>
+        <p>En BioSmile Clinic creemos firmemente en el poder de las alianzas estratégicas para brindar una atención odontológica de calidad, moderna y accesible. Contamos con el respaldo de marcas líderes en el sector dental, tecnológico y de bienestar, que comparten nuestro compromiso con la innovación, la salud bucal y la sostenibilidad. Gracias a estos aliados, podemos ofrecer tratamientos con tecnología de punta, productos de alto rendimiento y campañas educativas que benefician a toda nuestra comunidad.<br><br></p>
+
+          <div id="owl-demo" class="owl-carousel text-center">
+              <div class="item">
+                  <div class="">
+                    <img src="img/pat1.jpg" alt="" class="img-fluid rounded-circle">
+                  </div>
+                  <div class="">
+                      <h4 class="">Colgate®</h4>
+                      <p class="p1 text-center">
+                        Productos de higiene bucal y programas educativos.
+                      </p>
+                  </div>
+              </div>
+              <div class="item">
+                  <div class="">
+                    <img src="img/pat2.jpg" alt="" class="img-fluid rounded-circle">
+                  </div>
+                  <div class="">
+                      <h4 class="">Invisalign®</h4>
+                      <p class="p1 text-center">
+                        Ortodoncia invisible y tecnología de alineadores.
+                      </p>
+                  </div>
+              </div>
+              <div class="item">
+                  <div class="">
+                    <img src="img/pat3.png" alt="" class="img-fluid rounded-circle">
+                  </div>
+                  <div class="">
+                      <h4 class="">3Shape</h4>
+                      <p class="p1 text-center">
+                        Escáneres intraorales y diseño digital de prótesis.
+                      </p>
+                  </div>
+              </div>
+              <div class="item">
+                  <div class="">
+                    <img src="img/pat4.jpg" alt="" class="img-fluid rounded-circle">
+                  </div>
+                  <div class="">
+                      <h4 class="">Planmeca®</h4>
+                      <p class="p1 text-center">
+                        Unidades dentales y soluciones de imagen 3D.
+                      </p>
+                  </div>
+              </div>
+              <div class="item">
+                  <div class="">
+                      <img src="img/pat5.jpeg" alt="" class="img-fluid rounded-circle">
+                  </div>
+                  <div class="">
+                      <h4 class="">VitalDent®</h4>
+                      <p class="p1 text-center">
+                        Colaboración en programas de salud preventiva.
+                      </p>
+                  </div>
+              </div>
+              <div class="item">
+                  <div class="">
+                    <img src="img/pat6.jpg" alt="" class="img-fluid rounded-circle">
+                  </div>
+                  <div class="">
+                      <h4 class="">Philips Sonicare®</h4>
+                      <p class="p1 text-center">
+                        Tecnología avanzada en cepillado eléctrico.
+                      </p>
+                  </div>
+              </div>
+              <div class="item">
+                  <div class="">
+                    <img src="img/pat7.jpeg" alt="" class="img-fluid rounded-circle">
+                  </div>
+                  <div class="">
+                      <h4 class="">Oral-B®</h4>
+                      <p class="p1 text-center">
+                        Cepillos eléctricos y manuales, irrigadores.
+                      </p>
+                  </div>
+              </div>
+              <div class="item">
+                  <div class="">
+                    <img src="img/pat8.png" alt="" class="img-fluid rounded-circle">
+                  </div>
+                  <div class="cau_left">
+                      <h4 class="">Listerine®</h4>
+                      <p class="p1 text-center">
+                        Enjuagues bucales con respaldo clínico.
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+   <!-- Counter -->
+
+   <section class="counter-section py-5 text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-6 mb-4">
+          <div class="counter-box">
+            <h2 class="counter" data-count="1250">0</h2>
+            <p>Tratamientos realizados</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-6 mb-4">
+          <div class="counter-box">
+            <h2 class="counter" data-count="820">0</h2>
+            <p>Pacientes felices</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-6 mb-4">
+          <div class="counter-box">
+            <h2 class="counter" data-count="12">0</h2>
+            <p>Años de experiencia</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-6 mb-4">
+          <div class="counter-box">
+            <h2 class="counter" data-count="15">0</h2>
+            <p>Especialistas en el equipo</p>
+          </div>
+      </div>
+  </section>
+  
+    <!-- Combo interactivo para redes sociales -->
+    <section class="text-center my-5">
+      <h4>Síguenos en nuestras redes sociales</h4>
+      <p>Selecciona una red social para visitarnos:</p>
+      <div class="container" style="max-width: 300px;">
+        <select id="redSocial" class="form-select" onchange="irARedSocial()">
+          <option value="">-- Elegir red social --</option>
+          <option value="https://www.instagram.com/biosmile_clinicaintegral" target="_blank">Instagram</option>
+          <option value="https://www.facebook.com/people/Biosmile-Clínica-Dental/61565865744522/" target="_blank">Facebook</option>
+          <option value="https://www.youtube.com/@biosmileclinicadental6816" target="_blank">YouTube</option>
+        </select>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p data-es="© 2025 BioSmile Clinic. Todos los derechos reservados." data-en="© 2025 BioSmile Clinic. All rights reserved.">© 2025 BioSmile Clinic. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script>
+      const lightbox = GLightbox({ selector: '.glightbox' });
+    </script>
+    <script src="js/inicio.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        $("#owl-demo").owlCarousel({
+          items: 4,
+          lazyLoad: true,
+          autoplay: true,
+          autoplayTimeout: 3000,
+          autoplayHoverPause: true,
+          loop: true,
+          margin: 10,
+          nav: true,
+          navText: ["<", ">"],
+          dots: false,
+          responsive: {
+            0: { items: 1 },
+            576: { items: 2 },
+            768: { items: 3 },
+            992: { items: 4 }
+          }
+        });
+      });
+    </script>
+
+    <script src="https://code.jquery.com/jquery-migrate-3.0.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-animateNumber/0.0.14/jquery.animateNumber.min.js"></script>
+
+    <script>
+    $(document).ready(function () {
+      let counterTriggered = false;
+
+      $('.counter').each(function () {
+        const $this = $(this);
+        const countTo = $this.attr('data-count');
+
+        $this.waypoint(function (direction) {
+          if (!counterTriggered) {
+            $('.counter').each(function () {
+              const $el = $(this);
+              const target = $el.attr('data-count');
+
+              $el.animateNumber(
+                {
+                  number: target
+                },
+                2000
+              );
+            });
+            counterTriggered = true;
+          }
+        }, {
+          offset: '80%'
+        });
+      });
+    });
+    </script>
+  </body>
+</html>

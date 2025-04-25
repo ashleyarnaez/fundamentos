@@ -1,0 +1,78 @@
+[
+    {
+      "nombre": "Brackets Metálicos y Estéticos",
+      "categoria": "ortodoncia",
+      "imagen": "img/brackets.jpeg"
+    },
+    {
+      "nombre": "Cera ortodóntica",
+      "categoria": "ortodoncia",
+      "imagen": "img/cera.jpg"
+    },
+    {
+      "nombre": "Cepillos interdentales",
+      "categoria": "ortodoncia",
+      "imagen": "img/interdental.webp"
+    },
+    {
+      "nombre": "Kit de Blanqueamiento",
+      "categoria": "estetica",
+      "imagen": "img/kit.webp"
+    },
+    {
+      "nombre": "Pastas blanqueadoras",
+      "categoria": "estetica",
+      "imagen": "img/pasta.jpg"
+    },
+    {
+      "nombre": "Iluminadores LED para blanqueamiento",
+      "categoria": "estetica",
+      "imagen": "img/led.webp"
+    },
+    {
+      "nombre": "Cepillos de cerdas suaves",
+      "categoria": "higiene",
+      "imagen": "img/cepillo.webp"
+    },
+    {
+      "nombre": "Enjuagues bucales sin alcohol",
+      "categoria": "higiene",
+      "imagen": "img/enjuage.webp"
+    },
+    {
+      "nombre": "Hilos dentales con sabor",
+      "categoria": "higiene",
+      "imagen": "img/hilo.webp"
+    },
+    {
+      "nombre": "Provisionales acrílicos",
+      "categoria": "rehab",
+      "imagen": "img/prov.jpg"
+    },
+    {
+      "nombre": "Pastas para fijación de prótesis",
+      "categoria": "rehab",
+      "imagen": "img/fija.jpg"
+    },
+    {
+      "nombre": "Protectores oclusales",
+      "categoria": "rehab",
+      "imagen": "img/protector.webp"
+    },
+    {
+      "nombre": "Temporizadores para cepillado",
+      "categoria": "accesorios",
+      "imagen": "img/temp.jpg"
+    },
+    {
+      "nombre": "Estuches para ortodoncia o férulas",
+      "categoria": "accesorios",
+      "imagen": "img/estuche.jpg"
+    },
+    {
+      "nombre": "Portacepillos con diseño moderno",
+      "categoria": "accesorios",
+      "imagen": "img/porta.jpg"
+    }
+]
+  

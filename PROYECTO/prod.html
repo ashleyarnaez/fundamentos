@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Productos - BioSmile Clinic</title>
+  <link rel="icon" href="img/biosmilelogo.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/inicio.css">
+  <link href="https://fonts.googleapis.com/css2?family=National+Park:wght@200..800&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css" rel="stylesheet">
+</head>
+<body class="wrapper">
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="img/biosmilehorizontal.png" alt="Logo BioSmile Clinic">
+    </div>
+    <nav>
+      <ul class="nav">
+        <li class="nav-item"><a class="nav-link" href="inicio.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+        <li class="nav-item"><a class="nav-link" href="docs.html">Profesionales</a></li>
+        <li class="nav-item"><a class="nav-link" href="prod.html">Productos</a></li>
+        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        <li class="nav-item"><a class="nav-link" href="app.html">Agendar</a></li>
+      </ul>
+    </nav>
+    <div class="language-switcher">
+      <button onclick="changeLanguage('es')">ES</button>
+      <button onclick="changeLanguage('en')">EN</button>
+    </div>
+  </header>
+
+  <!-- Sección Productos -->
+  <main class="container pt-5">
+    <section class="test">
+      <h2 class="text-center">Productos Destacados</h2>
+      <p class="text-center mb-3">En BioSmile seleccionamos cuidadosamente cada producto que ofrecemos para acompañarte dentro y fuera del consultorio.</p>
+      <p class="text-center mb-4">Selecciona una categoría o buscá un producto:</p>
+
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <select id="filtroCategoria" class="form-select">
+            <option value="todos">Selecciona una categoría</option>
+            <option value="ortodoncia">Ortodoncia</option>
+            <option value="estetica">Estética</option>
+            <option value="higiene">Higiene</option>
+            <option value="rehab">Rehabilitación oral</option>
+            <option value="accesorios">Accesorios</option>  
+          </select>
+        </div>
+        <div class="col-md-6">
+          <input type="text" id="buscadorTexto" class="form-control" placeholder="Buscar productos por nombre...">
+        </div>
+      </div>
+
+      <div class="tz-gallery row g-4" id="galeriaProductos">
+      </div>
+    </section>
+  </main>
+
+  <!-- Suscripción -->
+  <section class="intro mt-5 pt-5 pb-5 bg-light rounded">
+    <div class="container text-center">
+      <h4 class="mb-3">¿Querés recibir nuestras promociones?</h4>
+      <p class="mb-4">Suscribite con tu correo electrónico y enterate de nuestras ofertas mensuales y novedades.</p>
+      <form id="formSuscripcion" class="d-flex justify-content-center gap-2 flex-column flex-md-row align-items-center">
+        <input type="email" id="emailSuscriptor" class="form-control w-50 w-md-50" placeholder="Tu correo electrónico">
+        <button type="submit" class="btn btn-primary">Suscribirme</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Encuesta -->
+  <section class="test py-5 text-center">
+    <div class="container">
+      <h4 class="mb-3">¿Usaste alguno de nuestros productos?</h4>
+      <p class="mb-4">Queremos saber qué pensás. Tu opinión nos ayuda a mejorar.</p>
+      <a href="encuesta.html" class="btn btn-light btn-lg">Responder Encuesta</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2025 BioSmile Clinic. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script src="js/subs.js"></script>
+  <script>emailjs.init("M8l006klnrJHz7iah");</script>
+
+  <!-- Buscadores y Filtraje -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const galeria = document.getElementById('galeriaProductos');
+      const buscador = document.getElementById('buscadorTexto');
+      const filtro = document.getElementById('filtroCategoria');
+      let productos = [];
+
+      fetch('js/prod.json')
+        .then(res => res.json())
+        .then(data => {
+          productos = data;
+          galeria.innerHTML = '<p class="text-center text-muted"></p>';
+        });
+
+      function renderProductos(productosFiltrados) {
+        galeria.innerHTML = '';
+        if (productosFiltrados.length === 0) {
+          galeria.innerHTML = '<p class="text-center mt-5">No se encontraron productos.</p>';
+          return;
+        }
+
+        productosFiltrados.forEach(p => {
+          const div = document.createElement('div');
+          div.className = 'col-md-4 producto';
+          div.setAttribute('data-categoria', p.categoria);
+          div.innerHTML = `
+            <a href="${p.imagen}">
+              <img src="${p.imagen}" alt="${p.nombre}" class="img-fluid rounded shadow">
+            </a>
+            <h5 class="text-center mt-2">${p.nombre}</h5>
+          `;
+          galeria.appendChild(div);
+        });
+
+        baguetteBox.run('.tz-gallery');
+      }
+
+      function filtrarProductos() {
+        const texto = buscador.value.toLowerCase().trim();
+        const categoria = filtro.value;
+
+        if (texto === '' && categoria === 'todos') {
+          galeria.innerHTML = '<p class="text-center text-muted"></p>';
+          return;
+        }
+
+        const resultados = productos.filter(p => {
+          const coincideTexto = texto === '' || p.nombre.toLowerCase().includes(texto);
+          const coincideCategoria = categoria === 'todos' || p.categoria === categoria;
+          return coincideTexto && coincideCategoria;
+        });
+
+        renderProductos(resultados);
+      }
+
+      buscador.addEventListener('input', filtrarProductos);
+      filtro.addEventListener('change', filtrarProductos);
+    });
+  </script>
+</body>
+</html>
